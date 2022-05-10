@@ -1,0 +1,58 @@
+{
+    "cocktails": [
+      {
+        "id": 1,
+        "name": "Black Russian",
+        "ingredients": "1.5 oz. Vodka, 1.5 oz. Caffe Lolita liqueur",
+        "tastingNotes": "Bittersweet, with rich hints of coffee and chocolate",
+        "serveStyle": "Stirred, served in a rocks glass over cracked ice",
+        "likes": 8
+      },
+      {
+        "id": 2,
+        "name": "Dirty Martini",
+        "ingredients": "2 oz. Vodka, dash of dry vermouth, 1/2 oz. olive brine, olive garnish",
+        "tastingNotes": "Spirit-forward, salty",
+        "serveStyle": "Shaken or stirred, served up in a martini glass",
+        "likes": 14
+      },
+      {
+          "id": 3,
+          "name": "Vesper",
+          "ingredients": "3 oz. dry gin, 1 oz vodka, 1/2 oz. Lillet Blanc, lemon peel ",
+          "tastingNotes": "Spirit-forward, herbaceous, slightly sweet finish with a hint of citrus",
+          "serveStyle": "Shaken and strained, served up in a martini glass",
+          "likes": 10
+  
+      },
+      {
+        "id": 4,
+        "name": "Vodka Fizz",
+        "ingredients": "2 oz. Vodka, 3/4 oz. lemon juice, 3/4 oz. simple syrup, one egg white, club soda",
+        "tastingNotes": "Frothy, bright",
+        "serveStyle": "Shaken, served in a highball glass",
+        "likes": 7
+      },
+      {
+        "id": 5,
+        "name": "Greyhound",
+        "ingredients": "2 0z. Vodka, 4 oz. fresh grapefruit juice",
+        "tastingNotes": "",
+        "serveStyle": "Shaken, served in collins or tall rocks glass",
+        "likes": 10
+      },
+      {
+        "id": 6,
+        "name": "Espresso Martini",
+        "ingredients": "1.5 oz. Vodka, .75 oz. coffee liqueur, .5 oz. crème de cacao ",
+        "tastingNotes": "Silky, rich, creamy with a hint of vanilla ",
+        "serveStyle": "Shaken and served up in a coupe or martini glass",
+        "likes": 25
+  
+   
+      }
+    ]
+  }
+  
+  
+ 
