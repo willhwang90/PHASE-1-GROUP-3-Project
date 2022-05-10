@@ -5,16 +5,20 @@ body {
 
 #show-panel {
 text-align: center;	
-background-color: #b32e2e;
+background-color: #f8f0e3;
+height: 10%;
+opacity: 0.8;
+border-top: solid;
+border-width: 30px;
 
 
 }
 
 #list-panel {
-	background-color: #f8f0e3;
+	background-color: #b32e2e;
 }
 .btn {
-	background-color: DodgerBlue; /* Blue background */
+	background-color: rgb(255, 30, 30); /* Blue background */
 	border: none; /* Remove borders */
 	color: white; /* White text */
 	padding: 12px 16px; /* Some padding */
