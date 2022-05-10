@@ -30,3 +30,14 @@ border-width: 30px;
   .btn:hover {
 	background-color: RoyalBlue;
   }
+  #header-show-panel {
+	font-size: 32px;
+	font-family: "Acme", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	src:url()
+  }
+
+  #img-cocktail {
+	  max-width: 50%;
+  }

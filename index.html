@@ -4,18 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<div id="list-panel">
-		<header>HEADER NAME</header>
+		<header>VODKAS</header>
 		<ul id="list">
 
 
 		</ul>
 	</div>
 	<div id="show-panel">
-		<header id="header-show-panel">Cocktails</header>
+		<header id="header-show-panel">SMELLS LIKE TEEN SPIRIT</header>
 		<img id="img-cocktail"/>
 		<div id="description">"Description"</div>
 		<button id="like-button" class="btn">
@@ -24,6 +27,23 @@
 			</div>
 		</button>
 		<div id="like-amt">number of likes</div>
+		<div>
+			<form id="cocktail-form">
+				<div>
+				<label for="name">Name:</label><br>
+				<input type="text" id="form-cocktail-name" name="cocktail-name"><br>
+				</div>
+				<div>
+				<label for="ingredients">Ingredients:</label><br>
+				<input type="text" id="form-cocktail-ingredients" name="cocktail-ingredients">
+				</div>
+				<div>
+				  <label for="tasting-notes">Tasting Notes:</label><br>
+				  <input type="text" id="tasting-notes" name="tasting-notes">
+				  </div>
+				<input type="submit" value="ADD DESCRIPTION"/>
+			  </form>
+		</div>
 	</div>
 	<script type="text/javascript" src="src/index.js"></script>
 	<script type='module' src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
