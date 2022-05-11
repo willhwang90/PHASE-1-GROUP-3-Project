@@ -6,7 +6,7 @@ body {
 #show-panel {
 text-align: center;	
 background-color: #f8f0e3;
-height: 10%;
+height: 100%;
 opacity: 0.8;
 border-top: solid;
 border-width: 30px;
@@ -40,4 +40,22 @@ border-width: 30px;
 
   #img-cocktail {
 	  max-width: 50%;
+  }
+
+  #comments-section{
+	position: relative; top:2px;
+	min-width:22%;
+	height: 90%;
+	top:0%;
+	right:0%;
+	z-index:10;
+	background-color:rgb(255, 249, 249);
+	border: 1px solid rgb(255, 243, 243);
+  }
+
+  #comments{
+	height: 90%;
+	top:90%;
+	right:75%;
+	z-index:0;
   }
