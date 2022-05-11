@@ -7,9 +7,9 @@ function displayWebsitePresets(){
 }
 
 function getCocktails (){
-    fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka')
+    fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
 .then(response => response.json())
-.then(data => renderCocktails(data)
+.then(data => renderCocktails(data.drinks)
 )}
 
 getCocktails()
@@ -24,16 +24,19 @@ let buttonIcon = document.getElementById("button-icon")
 let likeAmt = document.getElementById("like-amt")
 
 function renderCocktails(data){
-    for(const item of data.drinks){
-
-    let cocktailName = document.createElement('li')
-    cocktailName.innerHTML = item.strDrink
-    cocktailList.append(cocktailName)
-        
-
+    // for(const item of data.drinks){
+    // let cocktailName = document.createElement('li')
+    // cocktailName.innerHTML = item.strDrink
+    // cocktailList.append(cocktailName)
+    for(let i = 0; i < 15; i++){
+        console.log(data[i].idDrink)
+        let cocktailName = document.createElement('li')
+        cocktailName.innerHTML = data[i].strDrink
+        cocktailList.append(cocktailName)     
+    
     cocktailName.addEventListener('click', function(){
-       clickName.innerText = item.strDrink
-       cocktailImage.src = item.strDrinkThumb
+       clickName.innerText = data[i].strDrink
+       cocktailImage.src = data[i].strDrinkThumb
        clickDescription.innerText = " "
        let count = 0;
 
@@ -42,7 +45,6 @@ function renderCocktails(data){
             count = count + 1;
             likeAmt.innerHTML = count;
             likeAmt.textContent = count;
-
 })
     
 })
