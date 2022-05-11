@@ -18,11 +18,11 @@ border-width: 30px;
 	background-color: #b32e2e;
 }
 .btn {
-	background-color: rgb(255, 30, 30); /* Blue background */
+	background-color: rgb(255, 30, 30);
 	border: none; /* Remove borders */
 	color: white; /* White text */
-	padding: 12px 16px; /* Some padding */
-	font-size: 16px; /* Set a font size */
+	padding: 4px 4px; /* Some padding */
+	font-size: 50px; /* Set a font size */
 	cursor: pointer; /* Mouse pointer on hover */
   }
   
@@ -58,4 +58,7 @@ border-width: 30px;
 	top:90%;
 	right:75%;
 	z-index:0;
+  }
+  ul{
+	  list-style-type:none;
   }

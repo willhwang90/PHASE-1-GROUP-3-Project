@@ -7,9 +7,11 @@ function displayWebsitePresets(){
 }
 
 function getCocktails (){
-    fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
+    fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=b')
 .then(response => response.json())
-.then(data => renderCocktails(data.drinks)
+.then((data) => {renderCocktails(data.drinks)
+// console.log(detailsFinder(data.drinks, "17222"))
+}
 )}
 
 getCocktails()
@@ -22,26 +24,46 @@ let likeButton = document.getElementById("like-button")
 let formThing = document.getElementById("cocktail-form")
 let buttonIcon = document.getElementById("button-icon")
 let likeAmt = document.getElementById("like-amt")
+let ingredientsList = document.getElementById('ingredient-list')
 
+console.log(ingredientsList)
+
+function detailsFinder(arr, string){
+    let drinkDetails = arr.find(item => item.idDrink === string)
+    let ingli1 = document.createElement('li');
+    ingli1.innerHTML = drinkDetails.strIngredient1
+   console.log(drinkDetails.strIngredient1);
+    let ingli2 = document.createElement('li'); 
+    ingli2.textContent = drinkDetails.strIngredient2
+    console.log(drinkDetails.strIngredient2);
+    let ingli3 = document.createElement('li')
+    ingli3.textContent = drinkDetails.strIngredient3;
+    console.log(drinkDetails.strIngredient3);
+    let  ingli4 = document.createElement('li')
+    ingli4.textContent = drinkDetails.strIngredient4
+    console.log(drinkDetails.strIngredient4);
+    ingredientsList.append(ingli1, ingli2, ingli3, ingli4);
+  }
 function renderCocktails(data){
     // for(const item of data.drinks){
     // let cocktailName = document.createElement('li')
     // cocktailName.innerHTML = item.strDrink
     // cocktailList.append(cocktailName)
     for(let i = 0; i < 15; i++){
-        console.log(data[i].idDrink)
         let cocktailName = document.createElement('li')
         cocktailName.innerHTML = data[i].strDrink
         cocktailList.append(cocktailName)     
     
     cocktailName.addEventListener('click', function(){
-       clickName.innerText = data[i].strDrink
-       cocktailImage.src = data[i].strDrinkThumb
-       clickDescription.innerText = " "
-       let count = 0;
-
-       likeAmt.textContent = count;
-       likeButton.addEventListener('click', function(){
+        ingredientsList.innerText = ''
+        detailsFinder(data, data[i].idDrink);
+        clickName.innerText = data[i].strDrink;
+        cocktailImage.src = data[i].strDrinkThumb;
+        clickDescription.innerText = "Ingredients: ";
+       
+        let count = 0;
+        likeAmt.textContent = count;
+        likeButton.addEventListener('click', function(){
             count = count + 1;
             likeAmt.innerHTML = count;
             likeAmt.textContent = count;
