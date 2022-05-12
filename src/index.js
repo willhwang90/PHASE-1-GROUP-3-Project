@@ -10,7 +10,7 @@ function getCocktails (){
     fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=b')
 .then(response => response.json())
 .then((data) => {renderCocktails(data.drinks)
-// console.log(detailsFinder(data.drinks, "17222"))
+console.log(data.drinks)
 }
 )}
 
@@ -54,13 +54,17 @@ function renderCocktails(data){
         cocktailName.innerHTML = data[i].strDrink
         cocktailList.append(cocktailName)     
     
+    cocktailName.addEventListener('mouseenter',(e)=> {
+            e.target.style.color = "pink";
+            setTimeout(()=>e.target.style.color = "", 500)
+        })
     cocktailName.addEventListener('click', function(){
         ingredientsList.innerText = ''
         detailsFinder(data, data[i].idDrink);
         clickName.innerText = data[i].strDrink;
         cocktailImage.src = data[i].strDrinkThumb;
         clickDescription.innerText = "Ingredients: ";
-       
+
         let count = 0;
         likeAmt.textContent = count;
         likeButton.addEventListener('click', function(){
