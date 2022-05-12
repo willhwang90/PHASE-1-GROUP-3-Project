@@ -1,11 +1,11 @@
 Application should enable user to choose a cocktail based on information displayed 
 
-Core features of MVP will include:
-side panel: list of cocktails
+Core features of MVP includes:
+A side panel: list of cocktails
 show panel:
  cocktail image,
  ingredients, 
- tasting notes,
+
  instructions for serving
 
  API data: 

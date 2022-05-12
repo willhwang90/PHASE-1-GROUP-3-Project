@@ -13,12 +13,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,500;1,700&family=Tapestry&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+
 
 </head>
 <body>
 
 	<div id="list-panel">
-		<header>VODKAS</header>
+		<header id="cocktail-list-header"								">COCKTAIL LIST</header>
 		<ul id="list">
 
 
@@ -32,7 +39,7 @@
 		<ul id="ingredient-list"></ul>
 		<button id="like-button" class="btn">
 			<div id ="button-icon" class="btn">
-				<ion-icon name="wine-outline"></ion-icon>
+				<ion-icon size="large" name="wine-outline"></ion-icon>
 			</div>
 		</button>
 		<div id="like-amt"></div>
@@ -42,7 +49,7 @@
 				<label id="comments-label" for="Comments">Add Comment:</label><br>
 				<input type="text" id="form-comment" name="comment"><br>
 				</div>
-				<input type="submit" value="Add Comment"/>
+				<input id="add-comment-button" type="submit" value="Add Comment"/>
 			  </form>
 			  <div id ="comments-section">Comments:</div> 
 			</div>

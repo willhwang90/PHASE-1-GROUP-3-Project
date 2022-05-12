@@ -10,9 +10,11 @@ height: 100%;
 opacity: 0.8;
 border-top: solid;
 border-width: 30px;
-
-
 }
+#cocktail-list-header {
+	text-align: center;
+}
+
 #comments-label {
 	font-family: 'Cabin', sans-serif;
 	font-size: 30px;
@@ -27,13 +29,15 @@ border-width: 30px;
 
 #list-panel {
 	background-color: #b32e2e;
+	font-family: 'Tapestry', cursive;
+	font-size: 25px;
+	text-align: left;
 }
 .btn {
 	background-color: rgb(255, 30, 30);
 	border: none; /* Remove borders */
 	color: white; /* White text */
 	padding: 4px 4px; /* Some padding */
-	font-size: 50px; /* Set a font size */
 	cursor: pointer; /* Mouse pointer on hover */
   }
   
@@ -51,6 +55,10 @@ border-width: 30px;
 
   #img-cocktail {
 	  max-width: 50%;
+	  border-color: #b6a06b;
+	  border-style: inset;
+	  border-width: thick;
+
   }
 
   #comments-section{
@@ -64,6 +72,10 @@ border-width: 30px;
 	border: 1px solid rgb(255, 243, 243);
 	font-family: 'Cabin', sans-serif;
   }
+ #add-comment-button {
+	font-family: 'Cabin', sans-serif;
+	font-size: 15px;
+ }
 
   #comments{
 	height: 90%;
