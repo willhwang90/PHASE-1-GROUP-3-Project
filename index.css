@@ -61,4 +61,5 @@ border-width: 30px;
   }
   ul{
 	  list-style-type:none;
+	  cursor: pointer;
   }
