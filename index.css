@@ -75,7 +75,9 @@ border-width: 30px;
  #add-comment-button {
 	font-family: 'Cabin', sans-serif;
 	font-size: 15px;
+	border-radius: 50%;
  }
+ 
 
   #comments{
 	height: 90%;

@@ -21,7 +21,6 @@ let clickName = document.getElementById("header-show-panel")
 let cocktailImage = document.getElementById("img-cocktail")
 let clickDescription = document.getElementById("description")
 let likeButton = document.getElementById("like-button")
-let formThing = document.getElementById("cocktail-form")
 let buttonIcon = document.getElementById("button-icon")
 let likeAmt = document.getElementById("like-amt")
 let ingredientsList = document.getElementById('ingredient-list')
@@ -65,10 +64,18 @@ function renderCocktails(data){
         clickName.innerText = data[i].strDrink;
         cocktailImage.src = data[i].strDrinkThumb;
         clickDescription.innerText = "Ingredients: ";
+        commentArea.textContent = '';
 
+    formThing.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let newLi = document.createElement('li');
+            newLi.textContent = newComment.value
+            commentArea.append(newLi);
+            formThing.reset();
+        })
         let count = 0;
         likeAmt.textContent = count;
-        likeButton.addEventListener('click', function(){
+    likeButton.addEventListener('click', function(){
             count = count + 1;
             likeAmt.textContent = count;
 })
@@ -76,12 +83,23 @@ function renderCocktails(data){
 })
     }
 }
-// let count = 0;
-// likeAmt.textContent = count;
-// likeButton.addEventListener('click', function(){
-//     count = count + 1;
-//     likeAmt.innerHTML = count;
-//     likeAmt.textContent = count;
 
+
+
+//grab elements from HTML by id, assign variables to 
+//be used in event listener 'submit' form
+
+let formThing = document.getElementById("cocktail-form");
+let newComment = document.getElementById('form-comment');
+let commentArea = document.getElementById('comments-section');
+
+//attach event listener to cocktail-form, 'submit' event
+// formThing.addEventListener('submit', (e) => {
+//prevent page from reloading 
+//     e.preventDefault();
+//create new list item in order to append a new comment 
+//     let newLi = document.createElement('li');
+//assign new comment (newLi) and grab value  
+//     newLi.textContent = newComment.value
+//     commentArea.append(newLi);
 // })
-    
