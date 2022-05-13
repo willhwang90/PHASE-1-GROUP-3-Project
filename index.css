@@ -21,6 +21,7 @@ border-width: 30px;
 }
 #ingredient-list {
 	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
 }
 #description {
 	font-family: 'Cabin', sans-serif;
@@ -43,7 +44,7 @@ border-width: 30px;
   
   /* Darker background on mouse-over */
   .btn:hover {
-	background-color: RoyalBlue;
+	background-color:#b6a06b;
   }
   #header-show-panel {
 	font-size: 32px;
@@ -60,6 +61,10 @@ border-width: 30px;
 	  border-width: thick;
 
   }
+  #like-amt {
+	  font-family: 'Cabin', sans-serif;
+	  font-size: 20px;
+  }
 
   #comments-section{
 	position: relative; top:2px;
@@ -71,15 +76,16 @@ border-width: 30px;
 	background-color:rgb(255, 249, 249);
 	border: 1px solid rgb(255, 243, 243);
 	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
   }
  #add-comment-button {
-	 padding: 20px;
+	padding: 20px;
 	font-family: 'Cabin', sans-serif;
 	font-size: 15px;
 	border-radius: 40px;
+	color: red;
  }
  
-
   #comments{
 	height: 90%;
 	top:90%;
