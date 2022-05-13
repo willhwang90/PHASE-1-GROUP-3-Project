@@ -73,9 +73,10 @@ border-width: 30px;
 	font-family: 'Cabin', sans-serif;
   }
  #add-comment-button {
+	 padding: 20px;
 	font-family: 'Cabin', sans-serif;
 	font-size: 15px;
-	border-radius: 50%;
+	border-radius: 40px;
  }
  
 
@@ -84,6 +85,12 @@ border-width: 30px;
 	top:90%;
 	right:75%;
 	z-index:0;
+  }
+  #form-comment {
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  height: 30px;
+	  width: 400px;
   }
   ul{
 	  list-style-type:none;
