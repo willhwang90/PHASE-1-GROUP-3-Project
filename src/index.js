@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', displayWebsitePresets)
 
 function displayWebsitePresets(){
-    clickName.innerText = "Cocktail Dictionary: 'B'"
+    clickName.innerText = "BYOB"
     cocktailImage.src = `https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Un_bar_aux_Folies-Berg%C3%A8re_d%27E._Manet_%28Fondation_Vuitton%2C_Paris%29_%2833539037428%29.jpg/1920px-Un_bar_aux_Folies-Berg%C3%A8re_d%27E._Manet_%28Fondation_Vuitton%2C_Paris%29_%2833539037428%29.jpg`
     clickDescription.innerText = "For the community of people who love both vodka and the letter B"
 }
